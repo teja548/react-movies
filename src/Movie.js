@@ -40,7 +40,6 @@ const useStyles = makeStyles((theme) => ({
     width: 300,
     backgroundColor: "#212121",
     padding: 10,
-    display: "flex",
   },
 
   movie: {
@@ -142,7 +141,7 @@ export default function Movie(props) {
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12} key={props.key}>
         <Paper className={classes.paper}>
-          <div class="voting">
+          {/* <div class="voting">
             <button class="upvote">
               <i class="fa fa-thumbs-up"></i>
             </button>
@@ -151,16 +150,16 @@ export default function Movie(props) {
               <i class="fa fa-thumbs-down"></i>
             </button>
           </div>
-          <div>
-            <Paper
-              className={classes.image}
-              style={{
-                backgroundImage: `url('${props?.data?.poster}')`,
-                backgroundSize: "100% 100%",
-                marginTop: 30,
-              }}
-            ></Paper>
-          </div>
+          <div> */}
+          <Paper
+            className={classes.image}
+            style={{
+              backgroundImage: `url('${props?.data?.poster}')`,
+              backgroundSize: "100% 100%",
+              marginTop: 30,
+            }}
+          ></Paper>
+          {/* </div> */}
           <br />
           <Typography className={classes.movie}>
             {props?.data?.title}
